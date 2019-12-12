@@ -7,7 +7,11 @@ RUN apk update && apk upgrade \
     chromium@latest-stable \
     chromium-chromedriver@latest-stable \
     python3 \
-  && pip3 install robotframework robotframework-seleniumlibrary robotframework-faker \
+  && pip3 install robotframework \
+    robotframework-requests \
+    robotframework-seleniumlibrary \
+    robotframework-selenium2library \
+    robotframework-faker \
   && rm -rf /var/lib/apt/lists/* \
     /var/cache/apk/* \
     /usr/share/man \
