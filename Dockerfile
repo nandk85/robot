@@ -10,6 +10,7 @@ RUN apk update && apk upgrade \
   && pip3 install robotframework \
     robotframework-requests \
     robotframework-seleniumlibrary \
+    robotframework-jsonlibrary \
     robotframework-selenium2library \
     robotframework-faker \
   && rm -rf /var/lib/apt/lists/* \
